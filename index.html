@@ -1,9 +1,36 @@
- <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Claude Version</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
 <body>
+    <div class="container">
+        <h1>NFL Results Viewer</h1>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+        <div class="controls">
+            <label for="weekSelect">Select Week:</label>
+            <select id="weekSelect">
+                <option value="">-- Choose a week --</option>
+            </select>
+        </div>
 
+        <div id="weekInfo" class="week-info" style="display: none;">
+            <strong>Selected:</strong> <span id="selectedWeek"></span> |
+            <strong>Games Played:</strong> <span id="rowCount"></span>
+        </div>
+
+        <div class="table-container">
+            <table id="dataTable" style="display: none;">
+                <thead id="tableHeader"></thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+            <div id="noData" class="no-data">
+                Please select which week you would like to view
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
-</html> 
+</html>
