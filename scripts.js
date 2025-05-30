@@ -108,7 +108,7 @@ let weeklyData = {};
             // Create table header
 
             // const headerRow = data[0];
-                const headerRow = ['Game', 'Result']
+                const headerRow = ['Game', 'Watchability Score']
             const thead = document.getElementById('tableHeader');
             thead.innerHTML = '';
 
