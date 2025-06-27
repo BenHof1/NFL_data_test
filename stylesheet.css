@@ -5,20 +5,52 @@ body {
     margin: 0 auto;
     padding: 20px;
     background-color: #f5f5f5;
+
 }
+
+
 
 .container {
     background: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+
 }
 
 h1 {
-    color: #333;
+    color: #000000;
     text-align: center;
     margin-bottom: 30px;
 }
+
+input[type="radio"]{
+    display: none;
+}
+label {
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+}
+.tab-box{
+    width: 100%;
+    padding: 20px;
+    background: #ffffff;
+    order: 1;
+    display: none;
+
+}
+input[type="radio"]:checked + label + .tab-box{
+    display: block;
+}
+input[type="radio"]:checked + label {
+    background: #8c8989;
+}
+
 
 .controls {
     margin-bottom: 30px;
@@ -28,7 +60,7 @@ h1 {
 label {
     font-weight: bold;
     margin-right: 10px;
-    color: #555;
+    color: #ffffff;
 }
 
 select {
@@ -42,7 +74,7 @@ select {
 
 select:focus {
     outline: none;
-    border-color: #4CAF50;
+    border-color: #ffffff;
 }
 
 .table-container {
@@ -79,7 +111,7 @@ tr:hover {
 
 .no-data {
     text-align: center;
-    color: #888;
+    color: #ffffff;
     font-style: italic;
     padding: 40px;
 }
@@ -91,3 +123,4 @@ tr:hover {
     margin-bottom: 20px;
     border-left: 4px solid #4CAF50;
 }
+
