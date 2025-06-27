@@ -7,35 +7,62 @@
 </head>
 <body>
     <div class="container">
-        <h1>NFL Results Viewer</h1>
-        <p>
-            This is a spoiler-free way to see how entertaining the week of NFL is.
-            Our algorithm finds you the most exciting game each week so you can focus
-            on the best football in your limited time.
+        <input type ="radio" id="NFL" name="sports" checked="checked">
+        <label for="NFL">NFL</label>
+        <div class="tab-box">
+            <h1>NFL Results Viewer</h1>
+            <p>
+                This is a spoiler-free way to see how entertaining the week of NFL is.
+                Our algorithm finds you the most exciting game each week so you can focus
+                on the best football in your limited time.
 
-        </p>
-        <div class="controls">
-            <label for="weekSelect">Select Week:</label>
-            <select id="weekSelect">
-                <option value="">-- Choose a week --</option>
-            </select>
-        </div>
-
-        <div id="weekInfo" class="week-info" style="display: none;">
-            <strong>Selected:</strong> <span id="selectedWeek"></span> |
-            <strong>Games Played:</strong> <span id="rowCount"></span>
-        </div>
-
-        <div class="table-container">
-            <table id="dataTable" style="display: none;">
-                <thead id="tableHeader"></thead>
-                <tbody id="tableBody"></tbody>
-            </table>
-            <div id="noData" class="no-data">
-                Please select which week you would like to view
+            </p>
+            <div class="controls">
+                <label for="weekSelect">Select Week:</label>
+                <select id="weekSelect">
+                    <option value="">-- Choose a week --</option>
+                </select>
             </div>
+
+            <div id="weekInfo" class="week-info" style="display: none;">
+                <strong>Selected:</strong> <span id="selectedWeek"></span> |
+                <strong>Games Played:</strong> <span id="rowCount"></span>
+            </div>
+
+            <div class="table-container">
+                <table id="dataTable" style="display: none;">
+                    <thead id="tableHeader"></thead>
+                    <tbody id="tableBody"></tbody>
+                </table>
+                <div id="noData" class="no-data">
+                    Please select which week you would like to view
+                </div>
+
+            </div>
+            <script src="scripts.js"></script>
         </div>
+
+
+        <input type ="radio" id="F1" name="sports" >
+        <label for="F1">F1</label>
+        <div class="tab-box">
+            <h1>F1 Results Viewer</h1>
+            <p>
+                Vroom
+            </p>
+            <div class="table-container">
+                <table id="f1Table" style="display: none;">
+                    <thead id="f1TableHeader"></thead>
+                    <tbody id="f1TableBody"></tbody>
+                </table>
+                <div id="f1NoData" class="no-data">
+                    Please hold
+                </div>
+            </div>
+            <script src="scripts_f1.js"></script>
+
+        </div>
+
     </div>
-    <script src="scripts.js"></script>
 </body>
 </html>
